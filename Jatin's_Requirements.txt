@@ -1,0 +1,52 @@
+ShreeColorWorld Website
+
+For overall website view refer to this => https://paintmywalls.in/
+
+Requirements
+--------------------------------------------------------
+
+    1) Pages Requirement
+        --------------------------------
+        i) Landing page
+                |
+                |-> Call Now
+                |-> Get Quote -> Redirected to new page
+                |-> Whatsapp redirection
+                |
+        ii) Client Gallary
+                |
+                |-> Photos, Title, Description will be added dynamically from Admin side
+                |
+
+        iii) About 
+                |
+                |-> Certificates and its information just like Client Gallary and also be a dynamic content
+                | 
+
+        iv) Pricing 
+                |
+                |-> refer to this page => https://punctual-staging.celaenotechnology.com/Pricing.html
+                |
+
+        v) Features / What we are providing
+
+        vi) Recent Projects
+                |
+                |-> Same as client gallary and dynamic content
+                |
+
+        vii) Get Quotes form
+                |
+                |-> form will be filled and the quote will be sent to the mail he provided in a form
+                |
+
+
+    2) Project Requirements
+            |
+            |-> 
+            |
+        
+    3) Non functional Requirement
+
+    4) Priorites
+            |-> Create a mock website for just.
