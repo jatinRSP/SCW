@@ -1,7 +1,8 @@
 .frontpage{
     width:100%;
+    
     padding-top: 3rem;
-    height: calc(100vh - 3rem);
+    min-height: calc(100vh - 3rem);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,10 +11,10 @@
 }
 
 .frontpage{
-    background-image: url(../../public/ThemeImg/modern-house-design.avif);
+    background-image: url("../../public/ThemeImg/modern-house-design.avif");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     position: relative;
 }
 .frontpage::after{
@@ -26,7 +27,7 @@
 
 
 .CenterContent{
-    width: 45%;
+    width: clamp(40%,50%,60%);
     font-family: lexend;
 }
 
@@ -46,6 +47,7 @@
 }
 
 .btns{
+    text-align: center;
     margin-top: 2rem;
 }
 
