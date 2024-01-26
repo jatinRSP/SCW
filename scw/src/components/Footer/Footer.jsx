@@ -1,7 +1,9 @@
+import React from "react";
+
 function Footer(){
     return(
         <footer>
-            <p>© 2024 - All Copyright reservered by Shree color world</p>
+            <p>&copy; 2024 - All Copyright reservered by Shree color world</p>
         </footer>
     );
 }

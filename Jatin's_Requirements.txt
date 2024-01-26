@@ -40,6 +40,10 @@ Requirements
                 |-> form will be filled and the quote will be sent to the mail he provided in a form
                 |
 
+        viii) Header
+                |
+                |-> Header will be appear on scroll up and disappear on scroll down
+                |
 
     2) Project Requirements
             |
