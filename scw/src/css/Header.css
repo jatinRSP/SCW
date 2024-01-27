@@ -5,7 +5,7 @@ header{
     display: flex;
     align-items: center;
     padding-block: .8rem;
-    background-color: #1B1B1B;
+    background-color: transperent;
     position:fixed;
     top:0;
     left:0;
