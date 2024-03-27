@@ -10,6 +10,11 @@ body{
     height:100dvh;
     overflow-x: hidden;
     font-size: 16px;
+    isolation: isolate
+}
+
+p{
+    line-height: 1.4;
 }
 
 ::-webkit-scrollbar{
@@ -22,20 +27,4 @@ body{
 }
 ::-webkit-scrollbar-track{
     background-color: transparent;
-}
-
-button.themed-btn{
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    padding: .7rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all .1s ease-in-out;
-}
-
-button.themed-btn:hover{
-    background-color: transparent;
-    outline: 2px solid white;
-    box-shadow: 0 20px 58px 0px white;
 }

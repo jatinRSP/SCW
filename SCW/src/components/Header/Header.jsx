@@ -6,7 +6,7 @@ function Header(){
             <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet"></link>
             <header>
                 <div className="LogoWrapper">
-                    <img src={process.env.PUBLIC_URL+"/logos/LOGO3.svg"} alt="Logo" />
+                    <img src="../../public/logos/LOGO2.svg" alt="Logo" />
                 </div>
                 <nav>
                     <ul>

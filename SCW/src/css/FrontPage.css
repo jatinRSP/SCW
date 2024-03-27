@@ -1,6 +1,5 @@
-.frontpage{
-    width:100%;
-    
+.frontpage {
+    width: 100%;
     padding-top: 3rem;
     min-height: calc(100vh - 3rem);
     display: flex;
@@ -10,47 +9,135 @@
     isolation: isolate;
 }
 
-.frontpage{
+.frontpage {
     background-image: url("../../public/ThemeImg/BG4.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
 }
-.frontpage::after{
+
+.frontpage::after {
     content: '';
-    position:absolute;
+    position: absolute;
     inset: 0;
-    z-index: -1;
+    z-index: -2;
     background-color: #00000059;
 }
 
 
-.CenterContent{
-    width: clamp(40%,50%,60%);
+.CenterContent {
+    width: clamp(40%, 50%, 70%);
     font-family: lexend;
 }
 
-.CenterContent .headline{
+.CenterContent .headline {
     font-size: 3rem;
     color: white;
     font-weight: 600;
     margin-bottom: 1rem;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.CenterContent .subheadline{
+.headline ul {
+    height: 3.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.CenterContent .headline ul li {
+    max-width:18ch;
+    position: relative;
+    font-family: monospace;
+    overflow: hidden;
+    transform: translateY(0%);
+    animation: switchtext 10s steps(3) infinite;
+    top: 0;
+}
+
+.CenterContent .headline ul li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg,#8a8a8a,-50%,#808080);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-left: 3px solid white;
+    animation: typing 3s steps(var(--chr)) infinite,
+        blink 0.5s steps(1) infinite alternate;
+}
+
+
+.CenterContent .subheadline {
     font-size: 1rem;
     color: white;
     font-weight: 400;
     text-align: center;
 }
 
-.btns{
+.btns {
     text-align: center;
     margin-top: 2rem;
 }
 
-.btns button{
-    margin-inline: 1rem;
+.btns button {
+    margin-right: 1rem;
+}
+
+@keyframes typing {
+
+    40%,60% {
+        width: 0%;
+    }
+    
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes switchtext {
+    100% {
+        top: -170px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .frontpage {
+        background-image: url("../../public/ThemeImg/BG3.jpg");
+    }
+    
+    .CenterContent {
+        width: 80%;
+    }
+
+    .CenterContent .headline {
+        font-size: 2rem;
+    }
+
+    .headline ul {
+        height: 2.5rem;
+    }
+
+    .CenterContent .subheadline {
+        font-size: .8rem;
+    }
+
+    @keyframes switchtext {
+        100% {
+            top: -110px;
+        }
+    }
 }
