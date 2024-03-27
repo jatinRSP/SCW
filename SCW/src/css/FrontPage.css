@@ -92,8 +92,9 @@
 }
 
 .floating-icon-whatsapp {
-    width: 5rem;
-    height: 5rem;
+    --btn-size: 5rem;
+    width: var(--btn-size);
+    height: var(--btn-size);
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -143,7 +144,11 @@
 
 @media screen and (max-width: 768px) {
     .frontpage {
-        background-image: url("../../public/ThemeImg/BG3.jpg");
+        /* background-image: url("../../public/ThemeImg/BG3.jpg"); */
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 150% 150%;
+        position: relative;
     }
     
     .CenterContent {
@@ -160,6 +165,15 @@
 
     .CenterContent .subheadline {
         font-size: .8rem;
+    }
+
+    .CenterContent button{
+        font-size: .8rem;
+        padding:1rem 1.5rem;
+    }
+
+    .floating-icon-whatsapp {
+        --btn-size: 3rem;
     }
 
     @keyframes switchtext {
