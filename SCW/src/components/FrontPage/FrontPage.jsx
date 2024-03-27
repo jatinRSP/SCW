@@ -21,6 +21,11 @@ function FrontPage(){
                     <Button titletext="Get Quote" classes="themed-btn btn"/>
                 </div>
             </article>
+            <div className="floating-icon-whatsapp">
+                <a href="https://api.whatsapp.com/send/?phone=9824304318&text=Hello+Shree+Color+World+team%2C%0A%0ACould+you+please+provide+us+with+details+on+the+scope+of+work%2C+estimated+timeline%2C+pricing+breakdown%2C+and+any+additional+services+you+offer%3F+We%27re+particularly+interested+in+seeing+examples+of+your+previous+projects+to+assess+your+workmanship.%0A%0ALooking+forward+to+your+response.+Thank+you%21&type=phone_number&app_absent=0" target="_blank" rel="noreferrer">
+                    <img src="../../public/img/WTSP-100-BLACK.png" alt="" />
+                </a>
+            </div>
         </section>
     );
 }
