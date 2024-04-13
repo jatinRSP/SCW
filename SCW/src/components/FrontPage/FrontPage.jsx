@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../Button/Button";
 import "../../css/FrontPage.css";
-import Wtsp from "../../public/img/WTSP-100-BLACK.png";
+import Wtsp from "../../../public/img/WTSP-100-BLACK.png";
 
 function FrontPage() {
   return (
@@ -33,7 +33,7 @@ function FrontPage() {
           target="_blank"
           rel="noreferrer"
         >
-          <img src={Wtsp} alt="" />
+          <img src={Wtsp} alt="WTSP" />
         </a>
       </div>
     </section>
