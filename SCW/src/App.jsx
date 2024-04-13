@@ -3,8 +3,6 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import FrontPage from "./components/FrontPage/FrontPage";
 
-// YOOOO
-
 function App() {
   return (
     <>
