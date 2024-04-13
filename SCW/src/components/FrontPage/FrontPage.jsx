@@ -3,6 +3,8 @@ import Button from "../Button/Button";
 import "../../css/FrontPage.css";
 import Wtsp from "../../public/img/WTSP-100-BLACK.png";
 
+// YOOOOOO
+
 function FrontPage() {
   return (
     <section className="frontpage">
