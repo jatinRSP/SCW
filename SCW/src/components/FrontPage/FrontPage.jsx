@@ -5,7 +5,7 @@ import Wtsp from "../../../public/img/WTSP-100-BLACK.png";
 
 function FrontPage() {
   return (
-    <section className="frontpage">
+    <section className="container frontpage">
       <article className="CenterContent">
         <h1 className="headline">
           India's #1

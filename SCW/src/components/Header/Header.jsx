@@ -16,16 +16,19 @@ function Header() {
         <nav>
           <ul>
             <li style={{ "--i": ".1s" }}>
-              <a href="#">About US</a>
+              <a href="#frontpage">Home</a>
             </li>
             <li style={{ "--i": ".2s" }}>
-              <a href="#">Services</a>
+              <a href="#services">Services</a>
             </li>
             <li style={{ "--i": ".3s" }}>
-              <a href="#">Pricing</a>
+              <a href="#pricing">Pricing</a>
             </li>
             <li style={{ "--i": ".4s" }}>
-              <a href="#">Contanct Us</a>
+              <a href="#projects">Projects</a>
+            </li>
+            <li style={{ "--i": ".5s" }}>
+              <a href="#contactus">Contanct Us</a>
             </li>
           </ul>
         </nav>
