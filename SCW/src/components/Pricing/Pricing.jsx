@@ -8,7 +8,7 @@ import Stack from "@mui/material/Stack";
 
 function Pricing() {
   const [currentPage, setCurrentPage] = useState(1);
-  const cardsPerPage = 5;
+  const cardsPerPage = 4;
   const totalPages = Math.ceil(15 / cardsPerPage); // Assuming there are 15 cards in total
 
   const handlePageChange = (event, page) => {
