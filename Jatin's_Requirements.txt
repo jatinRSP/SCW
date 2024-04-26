@@ -64,3 +64,5 @@ Requirements
         ii) Hover Effect will be also same as above link's card
         iii) Card count => 15 and want to show 5 cards in a row and 3 pages and its pagination and also want arrow to navigate to next page
         
+2) Services Page Design
+        i) 

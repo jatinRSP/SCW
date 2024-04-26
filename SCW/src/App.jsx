@@ -9,9 +9,21 @@ import Project from "./components/Projects/Projects";
 import ContactUS from "./components/ContactUS/ContactUs";
 
 function App() {
+  
+  const [scroll, setScroll] = React.useState(false);
+  const changeBackground = () => {
+    if (window.scrollY >= 80) {
+      setScroll(true);
+    } else {
+      setScroll(false);
+    }
+  };
+  window.addEventListener("scroll", changeBackground);
+
+
   return (
     <>
-      <Header />
+      <Header isScrolling={scroll} />
       <FrontPage />
       <Service/>
       <Pricing/>

@@ -10,7 +10,12 @@ header{
     top:0;
     left:0;
     z-index: 1;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease,
+                background-color 0.3s ease-in-out;
+}
+
+header.isscrolling{
+    background-color: #1b1b1b;
 }
 
 header.scrolled {
