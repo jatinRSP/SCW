@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+
+.ag-format-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+
+.ag-courses_item a{
+    width: 16rem;
+    text-decoration: none;
+    color: white;
+} 
+
+.ag-courses_box {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.ag-courses_item {  
+    overflow: hidden;
+    border-radius: 28px;
+    font-family: "Proxima Nova";
+    isolation: isolate;
+}
+
+.ag-courses-item_link {
+    display: block;
+    padding: 30px 20px;
+    background-color: #121212;
+    height: 30rem;
+    overflow: hidden;
+    isolation: isolate;
+    position: relative;
+}
+
+
+.ag-courses-item_link:hover .ag-courses-item_bg {
+    -webkit-transform: scale(10);
+    -ms-transform: scale(10);
+    transform: scale(10);
+}
+
+.ag-courses-item_title {
+    margin: 0 0 25px;
+
+    overflow: hidden;
+    font-family: Oswald;
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+
+    z-index: 2;
+    position: relative;
+}
+
+.ag-courses_item .desc{
+    z-index: 4554;
+}
+
+.ag-courses-item_date-box {
+    font-size: 18px;
+    color: #fff;
+
+    z-index: 2;
+    position: relative;
+}
+
+.ag-courses-item_date {
+    font-weight: bold;
+    color: #f9b234;
+
+    -webkit-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    transition: color 0.5s ease;
+}
+
+.ag-courses-item_bg {
+    height: 128px;
+    width: 128px;
+    background-color: var(--service-card-color);
+
+    z-index: -1;
+    position: absolute;
+    top: -75px;
+    right: -75px;
+
+    border-radius: 50%;
+
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}

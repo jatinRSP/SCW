@@ -2,14 +2,14 @@ import "../../css/Header.css";
 import React from "react";
 import Logo from "../../../public/logos/LOGO2.svg";
 
-function Header() {
+function Header({ isScrolling }) {
   return (
     <>
       <link
         href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
         rel="stylesheet"
       ></link>
-      <header>
+      <header className={isScrolling && "isscrolling"}>
         <div className="LogoWrapper">
           <img src={Logo} alt="Logo" />
         </div>

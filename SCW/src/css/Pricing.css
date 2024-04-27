@@ -1,3 +1,11 @@
+.section-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-left: 5rem;
+    margin-bottom: 2rem;
+    color: var(--Primary-Black, #000);
+}
+
 .card-container {
   display: flex;
   align-items: center;
@@ -10,79 +18,69 @@
   transition: 0.3s;
   box-shadow: 0 1px 6px rgba(9, 30, 66, 0.25);
   background: var(--Primary-White, #fff);
-  min-height: 31pc;
-  min-width: 260px;
-  height: 31pc;
+  height: 32rem;
   width: 260px;
   border-radius: 22px;
-  text-align: left;
-  border: 0;
-  padding-top: 0;
-  cursor: pointer;
   flex-direction: column;
   display: flex;
-  padding-left: 0;
-  padding-bottom: 0;
-  padding-right: 0;
   justify-content: space-between;
   overflow: hidden;
-  position: relative;
+  font-family: "APTOS";
 }
 
-.card .card-image{
+.card .card-image {
   position: relative;
   overflow: hidden;
-
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .card-image img {
-  width: 100%;
-  border-top-left-radius: 16px; /* Rounded corners for top-left */
-  border-top-right-radius: 16px; /* Rounded corners for top-right */
+  width: 60%;
+  aspect-ratio: 1;
+  object-fit: contain;
 }
 
 .card-content {
   padding: 20px;
+  min-height: 150px;
 }
 
 .product-title {
   margin: 0;
-  font-size: 18px;
+  font-size: 1.7rem;
   color: #333333;
 }
 
+.product-desc {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.card-footer {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+}
+
 .product-price {
+  background-color: #1b1b1b;
+  border: 2px solid #1b1b1b;
+  width: max-content;
   margin: 0;
+  padding: 15px;
   font-size: 16px;
-  font-family: "Lamon milk";
-  color: #666666;
-}
-
-.card p {
-  margin: 0;
-}
-
-.card .card-image::before{
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: translateY(100%);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0) 100%);
-    border-top-left-radius: 16px; /* Rounded corners for top-left */
-    border-top-right-radius: 16px; /* Rounded corners for top-right */
-    transition: transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-}
-
-.card:hover .card-image::before{
-    transform: translateY(0%);
+  border-radius: 5px;
+  /* font-family: "Lemon milk"; */
+  color: white;
 }
 
 .card:hover {
   transform: translateY(-10px);
-  box-shadow: 0px 8px 12px #091e4226;
+  box-shadow: 0px 8px 12px #091e422a;
 }
 
 /* Pagination styles */
