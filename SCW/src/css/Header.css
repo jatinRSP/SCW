@@ -1,185 +1,186 @@
-header{
-    width:100%;
+header {
+    width: 100%;
     max-height: 3cm;
     overflow: hidden;
     transform: translateY(-100%);
     align-items: center;
     display: flex;
-    padding-block: .8rem;
+    padding-block: 0.8rem;
     background-color: transparent;
-    position:fixed;
-    top:0;
-    left:0;
-    z-index: 99999  !important;
-    transition: transform 0.3s ease,
-                background-color 0.3s ease-in-out;
-}
-
-header.isscrolling{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999 !important;
+    transition: transform 0.3s ease, background-color 0.3s ease-in-out;
+  }
+  
+  header.isscrolling {
     background-color: #1b1b1b96;
     transform: translateY(0%);
-}
-
-header.scrolled {
+  }
+  
+  header.scrolled {
     transform: translateY(-100%);
-}
-
-.LogoWrapper{
+  }
+  
+  .LogoWrapper {
     width: 4.2rem;
     aspect-ratio: 1;
     margin-left: 7rem;
-}
-
-.LogoWrapper img{
+  }
+  
+  .LogoWrapper img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-}
-
-header nav{
+  }
+  
+  header nav {
     margin-left: auto;
     margin-right: 7rem;
-}
-
-header nav ul{
+  }
+  
+  header nav ul {
     display: flex;
     list-style: none;
     gap: 3.3rem;
-}
-
-nav ul li{
+  }
+  
+  nav ul li {
     position: relative;
     text-transform: uppercase;
     font-family: lexend;
-    font-size: .9rem;
-    padding: .5rem 0;
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
     color: white;
-}
-
-header li a{
+  }
+  
+  header li a {
     text-decoration: none;
     color: white;
-}
-
-header li::after{
-    content: '';
+  }
+  
+  header li::after {
+    content: "";
     position: absolute;
     bottom: 0px;
     left: 0px;
     width: 0px;
     height: 3px;
     background: white;
-    transition: width .24s ease-in-out;
+    transition: width 0.24s ease-in-out;
     transform-origin: left;
-}
-
-header li:hover::after{
+  }
+  
+  header li:hover::after {
     width: 100%;
-}
-
-header .hamburger{
+  }
+  
+  header .hamburger {
     display: none;
-}
-
-header .hamburger div{
+  }
+  
+  header .hamburger div {
     width: 15px;
     height: 2px;
     background-color: white;
     margin: 3px;
     transform-origin: center;
-    transform-origin:left;
-    transition: all .3s ease;
-}
-
-header .hamburger div:nth-child(1){
+    transform-origin: left;
+    transition: all 0.3s ease;
+  }
+  
+  header .hamburger div:nth-child(1) {
     transform: translateY(0px);
-}
-
-header .hamburger div:nth-child(2){
+  }
+  
+  header .hamburger div:nth-child(2) {
     transform: translateY(0px);
-}
-
-header .hamburger div:nth-child(3){
+  }
+  
+  header .hamburger div:nth-child(3) {
     transform: translateY(0px);
-}
-
-header .hamburger.active div:nth-child(1){
-    transform: rotate(45deg);
-}
-
-header .hamburger.active div:nth-child(2){
+  }
+  
+  header .hamburger.active div:nth-child(1) {
+    transform: rotate(42deg);
+  }
+  
+  header .hamburger.active div:nth-child(2) {
     opacity: 0;
-}
-
-header .hamburger.active div:nth-child(3){
-    transform:rotate(-45deg);
-}
-
-/* add responsiveness for mobile */
-@media screen and (max-width: 768px){
-    body{
-        position: relative;
+  }
+  
+  header .hamburger.active div:nth-child(3) {
+    transform: rotate(319deg);
+  }
+  
+  /* add responsiveness for mobile */
+  @media screen and (max-width: 768px) {
+    body {
+      position: relative;
     }
-    header{
-        padding-block: .5rem;
-        justify-content: center;
+    header {
+      padding-block: 0.5rem;
+      justify-content: center;
+      overflow: visible;
     }
-
-    .LogoWrapper{
-        width: 4rem;
-        height: 3rem;
-        margin-left: 0rem;
+  
+    .LogoWrapper {
+      width: 4rem;
+      height: 3rem;
+      margin-left: 0rem;
     }
-
-    header nav{
-        width: 45%;
-        height: 70%;
-        margin:0;
-        padding:2rem 0; 
-        padding-top: 5rem;
-        padding-right: 1.4rem;
-        display: flex;
-        justify-content: right;
-
-        position: fixed;
-        right:-60%;
-        top:-10%;
-        
-        transform: rotate(-4.85deg);
-        transition: right .6s ease,
-                    transform .8s cubic-bezier(.19,1,.22,1) .15s;
-
-        background-color: var(--primary-color);
-        /* backdrop-filter: blur(6px) brightness(0.5); */
+  
+    header nav {
+      width: 45%;
+      height: max-content;
+      margin: 0;
+      padding: 2rem 0;
+      padding-top: 5rem;
+      padding-right: 1.4rem;
+      display: flex;
+      justify-content: right;
+  
+      position: absolute;
+      right: -60%;
+      top: -10%;
+  
+      transform: rotate(-4.85deg);
+      transition: right 0.6s ease,
+        transform 0.8s cubic-bezier(0.19, 1, 0.22, 1) 0.15s;
+  
+      background-color: var(--primary-color);
+      /* backdrop-filter: blur(6px) brightness(0.5); */
     }
-
-    header:has(.hamburger.active) nav{
-        right: 0%;
-        transform: rotate(0deg);
+  
+    header:has(.hamburger.active) nav {
+      right: 0%;
+      transform: rotate(0deg);
     }
-
-    header nav ul{
-        flex-direction: column;
-        padding: 0; 
-        gap: .3rem;
+  
+    header nav ul {
+      flex-direction: column;
+      padding: 0;
+      gap: 0.3rem;
     }
-
-    nav ul li{
-        font-size: .7rem;
-        text-align: right;
-        transform: translateX(100%);
-        transition: transform .5s cubic-bezier(0.215, 0.610, 0.355, 1) var(--i);
+  
+    nav ul li {
+      font-size: 0.7rem;
+      text-align: right;
+      transform: translateX(100%);
+      transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) var(--i);
     }
-
-    header:has(.hamburger.active) nav ul li{
-        transform: translateX(0%);
+  
+    header:has(.hamburger.active) nav ul li {
+      transform: translateX(0%);
     }
-
-    header .hamburger{
-        display: block;
-        position: absolute;
-        right: 1rem;
-        top: 1rem;
-        cursor: pointer;
+  
+    header .hamburger {
+      display: block;
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      cursor: pointer;
     }
-}
+  }
+  
