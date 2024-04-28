@@ -2,14 +2,15 @@
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
 }
 
 .container .slide{
-  width: 60%;
-  height: 70%;
+  width: 70%;
+  height: 80%;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -42,14 +43,14 @@
 
 
 .slide .item:nth-child(3){
-  left: 67%;
+  left: 60%;
 }
 .slide .item:nth-child(4){
-  left: calc(50% + 320px);
+  left: calc(60% + 160px);
 }
 
 .slide .item:nth-child(5){
-  left: calc(50% + 440px);
+  left: calc(70% + 220px);
 }
 
 /* here n = 0, 1, 2, 3,... */
@@ -119,14 +120,14 @@
   }
 }
 
-.slide .button{
+.container#projects .button{
   width: 100%;
   text-align: center;
   position: absolute;
   bottom: 20px;
 }
 
-.slide .button button{
+.container#projects .button button{
   width: 40px;
   height: 35px;
   border-radius: 8px;
@@ -139,6 +140,6 @@
   transition: 0.3s;
 }
 
-.slide button:hover{
+.container#projects button:hover{
   background-color: #333;
 }
