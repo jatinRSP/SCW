@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Button from "../Button/Button";
 import "../../css/FrontPage.css";
 import Wtsp from "../../../public/img/WTSP-100-BLACK.png";
@@ -10,11 +10,19 @@ function FrontPage() {
         <h1 className="headline">
           India's #1
           <br />
-          <ul>
-            <li style={{ "--chr": 16, "--delay": ".5s" }}>Painting Service</li>
-            <li style={{ "--chr": 16, "--delay": ".2s" }}>Painting Product</li>
-            <li style={{ "--chr": 17, "--delay": ".3s" }}>Painting Building</li>
-          </ul>
+          <div id="container">
+            <div id="flip">
+              <div>
+                <div class="painting-text">Painting Service</div>
+              </div>
+              <div>
+                <div class="painting-text">Painting Product</div>
+              </div>
+              <div>
+                <div class="painting-text">Painting Building</div>
+              </div>
+            </div>
+          </div>
         </h1>
         <p className="subheadline">
           We provide the best painting service in India. We have a team of
