@@ -63,18 +63,15 @@ function Footer() {
 
                     <div id="address">
                         <span>Office Location</span>
-                        <ul>
-                            <li>
-                                <i class="far fa-building"></i>
-                                <div>Los Angeles<br />
-                                    Office 9B, Sky High Tower, New A Ring Road, Los Angeles</div>
-                            </li>
-                            <li>
-                                <i class="fas fa-gopuram"></i>
-                                <div>Delhi<br />
-                                    Office 150B, Behind Sana Gate Char Bhuja Tower, Station Road, Delhi</div>
-                            </li>
-                        </ul>
+                        <div>Shop No 8 Shukun Mall Visat Gandhinagar Highway Sabarmati Ahmedabad</div>
+                    </div>
+                    <div id="address" className="mobileno">
+                        <span>Mobile No.</span>
+                        <div><a href="tel:9426485229">9426485229</a>, <a href="tel:9904740466">9904740466</a></div>
+                    </div>
+                    <div id="address" className="sac">
+                        <span>GST No</span>
+                        <div>24AAFCR2758G1ZD</div>
                     </div>
 
                 </div>
