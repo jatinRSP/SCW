@@ -1,16 +1,15 @@
 .container#projects {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  overflow: hidden;
 }
 
 .container .slide{
   width: 60%;
-  height: 80%;
+  height: 70%;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -18,11 +17,11 @@
 }
 
 .container .slide .item{
-  width: 200px;
-  height: 300px;
+  width: 140px;
+  height: 200px;
   position: absolute;
   top: 50%;
-  transform: translate(0, -50%);
+  transform: translate(25%, -50%);
   border-radius: 20px;
   box-shadow: 0 0px 50px #606060;
   background-position: 50% 50%;
@@ -43,21 +42,21 @@
 
 
 .slide .item:nth-child(3){
-  left: 50%;
+  left: 67%;
 }
 .slide .item:nth-child(4){
-  left: calc(50% + 220px);
+  left: calc(50% + 320px);
 }
+
 .slide .item:nth-child(5){
   left: calc(50% + 440px);
 }
 
 /* here n = 0, 1, 2, 3,... */
 .slide .item:nth-child(n + 6){
-  left: calc(50% + 660px);
+  left: calc(50% + 580px);
   opacity: 0;
 }
-
 
 
 .item .content{
@@ -68,7 +67,7 @@
   text-align: left;
   color: #eee;
   background-color: rgba(223, 223, 223, 0.255);
-  backdrop-filter: blur(17px);
+  backdrop-filter: blur(3px);
   transform: translate(0, -50%);
   font-family: system-ui;
   display: none;
@@ -119,6 +118,7 @@
       filter: blur(0);
   }
 }
+
 .button{
   width: 100%;
   text-align: center;
