@@ -17,7 +17,8 @@ body {
   font-size: 16px;
   isolation: isolate;
   scroll-snap-type: x mandatory;
-  background: #3f3f3f;
+  /* background: #3f3f3f; */
+  background: #878787;
 }
 
 p {
