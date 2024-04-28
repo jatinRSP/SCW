@@ -1,4 +1,4 @@
-.waves-container {
+.waves-container.fliped {
   transform: rotate(180deg);
 }
 
