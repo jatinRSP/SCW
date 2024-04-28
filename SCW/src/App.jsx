@@ -6,26 +6,17 @@ import Service from "./components/Services/Services";
 import Pricing from "./components/Pricing/Pricing";
 import Project from "./components/Projects/Projects";
 import ContactUS from "./components/ContactUS/ContactUs";
+import "../src/css/Wave.css";
 
 function App() {
   const [scroll, setScroll] = React.useState(false);
-
-  // For change background on scroll
-  // const changeBackground = () => {
-  //   if (window.scrollY >= 80) {
-  //     setScroll(true);
-  //   } else {
-  //     setScroll(false);
-  //   }
-  // };
-  // window.addEventListener("scroll", changeBackground);
-
 
   // For Hide unhide header on scroll
   React.useEffect(() => {
     let lastScrollTop = 0;
     const changeBackground = () => {
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
 
       if (window.scrollY >= 200 && scrollTop > lastScrollTop) {
         setScroll(false); // Scrolling down
@@ -45,6 +36,46 @@ function App() {
     <>
       <Header isScrolling={scroll} />
       <FrontPage />
+
+      <div className="waves-container">
+        <svg
+          className="waves"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28"
+          preserveAspectRatio="none"
+          shapeRendering="auto"
+        >
+          <defs>
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+            />
+          </defs>
+          <g className="parallax">
+            <use
+              xlinkHref="#gentle-wave"
+              x="48"
+              y="0"
+              fill="rgba(255,255,255,0.7)"
+            />
+            <use
+              xlinkHref="#gentle-wave"
+              x="48"
+              y="3"
+              fill="rgba(255,255,255,0.5)"
+            />
+            <use
+              xlinkHref="#gentle-wave"
+              x="48"
+              y="5"
+              fill="rgba(255,255,255,0.3)"
+            />
+            <use xlinkHref="#gentle-wave" x="48" y="7" fill="#fff" />
+          </g>
+        </svg>
+      </div>
+
       <Service />
       <Pricing />
       <Project />
