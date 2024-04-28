@@ -12,7 +12,7 @@ import Wave from "./components/Wave/Wave";
 import "../src/css/Wave.css";
 
 function App() {
-  const [scroll, setScroll] = React.useState(false);
+  const [scroll, setScroll] = React.useState(true);
 
   // For Hide unhide header on scroll
   React.useEffect(() => {
