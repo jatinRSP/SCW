@@ -143,7 +143,7 @@ function Pricing() {
     ];
 
     return cards.slice(startIndex, endIndex).map((card) => (
-      <div key={card} className="card">
+      <div key={card.name} className="card">
         <div className="card-image">
           {/* Placeholder image */}
           <img src={card.image} alt={card.name} />

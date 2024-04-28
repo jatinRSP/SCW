@@ -13,13 +13,13 @@ function FrontPage() {
           <div id="container">
             <div id="flip">
               <div>
-                <div class="painting-text">Painting Service</div>
+                <div className="painting-text">Painting Service</div>
               </div>
               <div>
-                <div class="painting-text">Painting Product</div>
+                <div className="painting-text">Painting Product</div>
               </div>
               <div>
-                <div class="painting-text">Painting Building</div>
+                <div className="painting-text">Painting Building</div>
               </div>
             </div>
           </div>
