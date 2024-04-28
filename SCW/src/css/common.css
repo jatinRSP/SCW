@@ -39,7 +39,7 @@ p {
 
 .container {
   width: 100dvw;
-  height: 100dvh;
+  min-height: 100dvh;
   scroll-snap-align: center;
   padding-top: 7rem;
 }
