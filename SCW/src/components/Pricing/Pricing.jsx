@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import "../../css/Pricing.css";
 
@@ -23,8 +23,28 @@ import img15 from "../../../public/Products/15_WALL_PRIMER.jpeg";
 
 function Pricing() {
   const [currentPage, setCurrentPage] = useState(1);
-  const cardsPerPage = 4;
+  const [cardsPerPage, setCardPerPage] = useState(5); // Number of cards per page [6 cards per page
   const totalPages = Math.ceil(15 / cardsPerPage); // Assuming there are 15 cards in total
+
+
+  useEffect(() => {
+    const updateCardsPerPage = () => {
+      if (window.innerWidth <= 768) {
+        setCardPerPage(1); // Show 2 cards per page on mobile
+      } else {
+        setCardPerPage(5); // Show 6 cards per page on desktop
+      }
+    };
+
+    window.addEventListener("resize", updateCardsPerPage);
+
+    // Initial call to set correct cards per page on load
+    updateCardsPerPage();
+
+    return () => {
+      window.removeEventListener("resize", updateCardsPerPage);
+    };
+  }, []);
 
   const handlePageChange = (event, page) => {
     setCurrentPage(page);
@@ -158,6 +178,8 @@ function Pricing() {
       </div>
     ));
   };
+
+  
 
   return (
     <section className="container" id="pricing">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import Header from "./components/Header/Header";
 
@@ -15,7 +15,7 @@ function App() {
   const [scroll, setScroll] = React.useState(true);
 
   // For Hide unhide header on scroll
-  React.useEffect(() => {
+  useEffect(() => {
     let lastScrollTop = 0;
     const changeBackground = () => {
       const scrollTop =
@@ -30,6 +30,7 @@ function App() {
     };
 
     window.addEventListener("scroll", changeBackground);
+
     return () => {
       window.removeEventListener("scroll", changeBackground);
     };
