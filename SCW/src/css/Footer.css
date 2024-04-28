@@ -36,12 +36,14 @@ footer .row {
 
 .link-cat {
   cursor: pointer;
+  font-family: "LEXEND";
 }
 
 footer ul {
   padding: 0;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  font-family: "LEXEND";
 }
 
 footer ul li {

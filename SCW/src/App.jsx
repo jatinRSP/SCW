@@ -56,9 +56,8 @@ function App() {
       <Project />
 
       <Wave />
-      <Wave isfliped={true} />
 
-      <ContactUS />
+      {/* <ContactUS /> */}
 
       <Footer />
     </>
