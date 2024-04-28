@@ -11,7 +11,6 @@ import ContactUS from "./components/ContactUS/ContactUs";
 import Wave from "./components/Wave/Wave";
 import "../src/css/Wave.css";
 
-
 function App() {
   const [scroll, setScroll] = React.useState(true);
 
