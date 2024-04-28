@@ -13,8 +13,8 @@ function Services() {
               <div className="ag-courses-item_title">
                 Interior Painting
               </div>
-              <div className='desc'>
-                lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <div className='img-container'>
+                <img src="https://picsum.photos/200/300" alt="painting" />
               </div>
 
             </a>
@@ -27,8 +27,8 @@ function Services() {
               <div className="ag-courses-item_title">
                 Exterior Painting
               </div>
-              <div className='desc'>
-                lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <div className='img-container'>
+                <img src="https://picsum.photos/200/300" alt="painting" />
               </div>
 
             </a>
@@ -41,8 +41,8 @@ function Services() {
               <div className="ag-courses-item_title">
                 Commorcial Painting
               </div>
-              <div className='desc'>
-                lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <div className='img-container'>
+                <img src="https://picsum.photos/200/300" alt="painting" />
               </div>
             </a>
           </div>
@@ -54,8 +54,8 @@ function Services() {
               <div className="ag-courses-item_title">
                 Designer Wall
               </div>
-              <div className='desc'>
-                lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <div className='img-container'>
+                <img src="https://picsum.photos/200/300" alt="painting" />
               </div>
             </a>
           </div>
