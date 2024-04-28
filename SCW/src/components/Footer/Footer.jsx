@@ -51,11 +51,6 @@ function Footer() {
                     </ul>
                 </div>
                 <div class="col-3" id="newsletter">
-                    <span>Stay Connected</span>
-                    <form id="subscribe">
-                        <input type="email" id="subscriber-email" placeholder="Enter Email Address" />
-                        <input type="submit" value="Subscribe" id="btn-scribe" />
-                    </form>
 
                     <div class="social-links social-2">
                         <a href=""><i class="fab fa-facebook-f"></i></a>
