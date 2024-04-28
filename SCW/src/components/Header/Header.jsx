@@ -27,9 +27,9 @@ function Header({ isScrolling }) {
             <li style={{ "--i": ".4s" }}>
               <a href="#projects">Projects</a>
             </li>
-            <li style={{ "--i": ".5s" }}>
+            {/* <li style={{ "--i": ".5s" }}>
               <a href="#contactus">Contact Us</a>
-            </li>
+            </li> */}
           </ul>
         </nav>
         <div
