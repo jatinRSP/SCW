@@ -1,6 +1,9 @@
 import React from "react";
 import "../../css/Services.css";
-import { alignProperty } from "@mui/material/styles/cssUtils";
+import img1 from "../../../public/Services/Interior.jpg";
+import img2 from "../../../public/Services/Exterior.jpg";
+import img3 from "../../../public/Services/Commercial.jpg";
+import img4 from "../../../public/Services/Designer.jpg";
 
 function Services() {
   return (
@@ -16,7 +19,7 @@ function Services() {
 
               <div className="ag-courses-item_title">Interior Painting</div>
               <div className="img-container">
-                <img src="https://picsum.photos/200/300" alt="painting" />
+                <img src={img1} alt="painting" />
               </div>
             </a>
           </div>
@@ -30,7 +33,7 @@ function Services() {
 
               <div className="ag-courses-item_title">Exterior Painting</div>
               <div className="img-container">
-                <img src="https://picsum.photos/200/300" alt="painting" />
+                <img src={img2} alt="painting" />
               </div>
             </a>
           </div>
@@ -44,7 +47,7 @@ function Services() {
 
               <div className="ag-courses-item_title">Commorcial Painting</div>
               <div className="img-container">
-                <img src="https://picsum.photos/200/300" alt="painting" />
+                <img src={img3} alt="painting" />
               </div>
             </a>
           </div>
@@ -56,9 +59,9 @@ function Services() {
             <a href="#" className="ag-courses-item_link">
               <div className="ag-courses-item_bg"></div>
 
-              <div className="ag-courses-item_title">Exterior Painting</div>
+              <div className="ag-courses-item_title">Designer Wall</div>
               <div className="img-container">
-                <img src="https://picsum.photos/200/300" alt="painting" />
+                <img src={img4} alt="painting" />
               </div>
             </a>
           </div>
