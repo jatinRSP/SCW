@@ -31,8 +31,12 @@ function FrontPage() {
           painters who are experts in their field.
         </p>
         <div className="btns">
-          <a href="tel:9426485229"><Button titletext="Call Now" classes="themed-btn btn" /></a>
-          <a href="../../../public/315_448D_452D_CyberSec_Project_Report.pdf"><Button titletext="Get Quote" classes="themed-btn btn" /></a>
+          <a href="tel:9426485229">
+            <Button titletext="Call Now" classes="themed-btn btn" />
+          </a>
+          <a href="../../../public/QUOT.pdf">
+            <Button titletext="Get Quote" classes="themed-btn btn" />
+          </a>
         </div>
       </article>
       <div className="floating-icon-whatsapp">
