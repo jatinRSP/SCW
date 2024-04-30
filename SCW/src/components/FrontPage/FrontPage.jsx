@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Button from "../Button/Button";
 import "../../css/FrontPage.css";
 import Wtsp from "../../../public/img/WTSP-100-BLACK.png";
+import quote from "../../../public/QUOT.pdf";
 
 function FrontPage() {
   return (
@@ -34,7 +35,7 @@ function FrontPage() {
           <a href="tel:9426485229">
             <Button titletext="Call Now" classes="themed-btn btn" />
           </a>
-          <a href="../../../public/QUOT.pdf">
+          <a href={quote}>
             <Button titletext="Get Quote" classes="themed-btn btn" />
           </a>
         </div>

@@ -45,7 +45,7 @@ function Services() {
             <a href="#" className="ag-courses-item_link">
               <div className="ag-courses-item_bg"></div>
 
-              <div className="ag-courses-item_title">Commorcial Painting</div>
+              <div className="ag-courses-item_title">Commercial Painting</div>
               <div className="img-container">
                 <img src={img3} alt="painting" />
               </div>
